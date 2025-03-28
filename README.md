@@ -1,3 +1,4 @@
+GROUP 13 
 Procedures for Breast Cancer Data Analysis
 1. Data Loading:
 The dataset was loaded using pandas with the following code:
@@ -10,6 +11,7 @@ Data preprocessing steps included:
 Checking for missing values and duplicates.
 Encoding categorical variables using Label Encoding.
 Scaling numerical features using StandardScaler.
+
 3. Exploratory Data Analysis (EDA):
 EDA was performed to understand the data distribution and relationships between features.
 
