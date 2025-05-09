@@ -3,9 +3,8 @@ GROUP 12
 Procedures for Breast Cancer Data Analysis
 This report outlines the procedure followed to analyze the Breast Cancer Wisconsin (Diagnostic) dataset. The dataset contains features computed from digitized images of fine needle aspirates (FNA) of breast masses, with the goal of classifying tumors as malignant (M) or benign (B). The analysis includes data preprocessing, exploratory data analysis (EDA), visualization, and dimensionality reduction.
 
-2. Data Preprocessing
-
-2.1 Loading and Initial Inspection
+Data Preprocessing
+1.1 Loading and Initial Inspection
 The dataset was loaded using pandas.read_csv().
 
 Initial inspection included:
@@ -24,17 +23,17 @@ No missing values or duplicates were found.
 
 Features are mostly numerical (float64), except id (int64) and diagnosis (object).
 
-2.2 Encoding Categorical Data
+1.2 Encoding Categorical Data
 The target variable diagnosis (M/B) was encoded numerically using LabelEncoder:
 
 M (Malignant) → 1
 
 B (Benign) → 0
 
-2.3 Feature Scaling
+1.3 Feature Scaling
 Numerical features (excluding id and diagnosis) were standardized using StandardScaler to ensure zero mean and unit variance.
 
-2.4 Outlier Detection 
+1.4 Outlier Detection 
 Outliers were identified but were kept since they represented aggresive froms of cnacer however if we were to remove the outliers we would use the IQR method  
 
 Lower bound = Q1 – 1.5 × IQR
@@ -43,56 +42,56 @@ Upper bound = Q3 + 1.5 × IQR
 
 After removal, the dataset reduced from 569 to 277 samples.
 
-3.Exploratory Data Analysis (EDA)
-3.1 Summary Statistics
+2.Exploratory Data Analysis (EDA)
+2.1 Summary Statistics
 Descriptive statistics (df.describe()) revealed:
 
 Mean values (e.g., radius_mean = 14.13, area_mean = 654.89).
 
 Standard deviations, min/max values, and quartiles.
 
-3.2 Class Distribution
+2.2 Class Distribution
 The dataset was imbalanced:
 
 Benign (B): 357 cases (62.74%)
 
 Malignant (M): 212 cases (37.26%)
 
-3.3 Correlation Analysis
+2.3 Correlation Analysis
 A heatmap of the correlation matrix showed:
 
 High correlation between features like radius_mean, perimeter_mean, and area_mean.
 
 Some features (e.g., concave points_mean) strongly correlated with diagnosis.
 
-3.4 Feature Importance
+2.4 Feature Importance
 Correlation with diagnosis (diagnosis_numeric) was computed:
 
 Top positively correlated features: concave points_worst, perimeter_worst.
 
 Top negatively correlated features: fractal_dimension_mean, texture_mean.
 
-4. Data Visualization
-4.1 Count Plot
+3. Data Visualization
+3.1 Count Plot
 A bar plot showed the distribution of malignant vs. benign cases.
 
-4.2 Histograms & KDE Plots
+3.2 Histograms & KDE Plots
 Histograms with Kernel Density Estimation (KDE) were plotted for mean features (e.g., radius_mean, texture_mean).
 
 Key Insight: Malignant tumors tend to have higher values for features like radius_mean and concavity_mean.
 
-4.3 Box Plots
+3.3 Box Plots
 Box plots were generated to compare feature distributions:
 
 Between diagnosis groups: Malignant cases had higher median values for most features.
 
 Overall distributions: Some features (e.g., area_mean) had significant outliers.
 
-4.4 Pair Plot
+3.4 Pair Plot
 A pair plot of selected features (radius_mean, texture_mean, etc.) showed clear separation between malignant and benign cases.
 
-5. Dimensionality Reduction (PCA)
-5.1 Principal Component Analysis (PCA)
+4. Dimensionality Reduction (PCA)
+4.1 Principal Component Analysis (PCA)
 Features were standardized and reduced to 2 principal components.
 
 Explained Variance:
@@ -103,7 +102,7 @@ PC2: ~19% of variance.
 
 A scatter plot of PC1 vs. PC2 showed good separation between malignant and benign cases.
 
-5.2 Cumulative Explained Variance
+5.1 Cumulative Explained Variance
 A scree plot indicated that ~95% variance was explained by the first 10 components.
 
 6. Key Findings
@@ -125,7 +124,7 @@ Modeling: Logistic Regression, SVM, or Random Forest could be effective given th
 8. Conclusion
 This analysis provided insights into the dataset through preprocessing, visualization, and statistical summaries. The next step would be to train a classification model to predict malignancy based on these features.
 
-Comprehensive Report: Breast Cancer Classification with Machine Learning
+ Breast Cancer Classification with Machine Learning
 1. Data Preparation & Preprocessing
 1.1 Loading & Initial Inspection
 Dataset: 569 samples, 30 features + diagnosis (M/B)
