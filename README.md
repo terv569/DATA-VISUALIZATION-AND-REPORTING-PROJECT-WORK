@@ -130,8 +130,11 @@ Modeling: Logistic Regression, SVM, or Random Forest could be effective given th
 This analysis provided insights into the dataset through preprocessing, visualization, and statistical summaries. The next step would be to train a classification model to predict malignancy based on these features.
 
  Breast Cancer Classification with Machine Learning
+ 
 1. Data Preparation & Preprocessing
+
 1.1 Loading & Initial Inspection
+
 Dataset: 569 samples, 30 features + diagnosis (M/B)
 
 Checked for missing values & duplicates (none found)
@@ -139,6 +142,7 @@ Checked for missing values & duplicates (none found)
 Encoded target: M → 1, B → 0
 
 1.2 Feature Engineering
+
 Dropped ID column (non-predictive)
 
 Standardized features using StandardScaler() (critical for KNN)
@@ -146,6 +150,7 @@ Standardized features using StandardScaler() (critical for KNN)
 Train-test split (60-40) with stratification to preserve class balance
 
 2. Model Implementation
+   
 2.1 Random Forest Classifier
 Initial Model:
 
@@ -162,6 +167,7 @@ Best params: n_estimators=200, class_weight='balanced'
 Improved Recall: 94% (malignant)
 
 2.2 K-Nearest Neighbors
+
 Standardized features required
 
 Default k=5 neighbors
