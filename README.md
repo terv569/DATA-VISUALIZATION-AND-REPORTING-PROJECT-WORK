@@ -4,6 +4,7 @@ Procedures for Breast Cancer Data Analysis
 This report outlines the procedure followed to analyze the Breast Cancer Wisconsin (Diagnostic) dataset. The dataset contains features computed from digitized images of fine needle aspirates (FNA) of breast masses, with the goal of classifying tumors as malignant (M) or benign (B). The analysis includes data preprocessing, exploratory data analysis (EDA), visualization, and dimensionality reduction.
 
 2. Data Preprocessing
+
 2.1 Loading and Initial Inspection
 The dataset was loaded using pandas.read_csv().
 
