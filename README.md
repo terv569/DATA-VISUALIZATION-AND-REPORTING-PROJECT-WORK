@@ -4,6 +4,7 @@ Procedures for Breast Cancer Data Analysis
 This report outlines the procedure followed to analyze the Breast Cancer Wisconsin (Diagnostic) dataset. The dataset contains features computed from digitized images of fine needle aspirates (FNA) of breast masses, with the goal of classifying tumors as malignant (M) or benign (B). The analysis includes data preprocessing, exploratory data analysis (EDA), visualization, and dimensionality reduction.
 
 Data Preprocessing
+
 1.1 Loading and Initial Inspection
 The dataset was loaded using pandas.read_csv().
 
@@ -43,6 +44,8 @@ Upper bound = Q3 + 1.5 × IQR
 After removal, the dataset reduced from 569 to 277 samples.
 
 2.Exploratory Data Analysis (EDA)
+
+
 2.1 Summary Statistics
 Descriptive statistics (df.describe()) revealed:
 
@@ -72,6 +75,7 @@ Top positively correlated features: concave points_worst, perimeter_worst.
 Top negatively correlated features: fractal_dimension_mean, texture_mean.
 
 3. Data Visualization
+
 3.1 Count Plot
 A bar plot showed the distribution of malignant vs. benign cases.
 
@@ -90,7 +94,8 @@ Overall distributions: Some features (e.g., area_mean) had significant outliers.
 3.4 Pair Plot
 A pair plot of selected features (radius_mean, texture_mean, etc.) showed clear separation between malignant and benign cases.
 
-4. Dimensionality Reduction (PCA)
+4.Dimensionality Reduction (PCA)
+
 4.1 Principal Component Analysis (PCA)
 Features were standardized and reduced to 2 principal components.
 
@@ -165,15 +170,10 @@ Accuracy: 96.1%, Recall: 89% (malignant)
 
 Cross-Validation AUC: 0.968
 
-Model Performance
-Random Forest	 Accuracy 97%
-               Recall (M)	94%
-               AUC 1.00
-K-Nearest Neighbors	 Accuracy 96.1%
-                     Recall (M) 89%
-                      AUC 	0.97
 Winner: Random Forest (better at catching cancer cases)
+
 3.2 Key Visualizations
+
 Confusion Matrices: Both models showed excellent benign detection (99%+)
 
 Feature Importance: worst concave points most predictive in RF
@@ -181,6 +181,7 @@ Feature Importance: worst concave points most predictive in RF
 ROC Curves: Both models achieved perfect AUC=1.0 on test set
 
 4. Critical Insights
+   
 Class Imbalance Matters:
 
 Untuned RF missed 11% malignant cases
