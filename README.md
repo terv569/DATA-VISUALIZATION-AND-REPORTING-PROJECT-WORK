@@ -166,9 +166,12 @@ Accuracy: 96.1%, Recall: 89% (malignant)
 Cross-Validation AUC: 0.968
 
 Model Performance
-Model	Accuracy	Recall (Cancer Detection)	AUC
-Random Forest	97%	94%	1.00
-K-Nearest Neighbors	96.1%	89%	0.97
+Random Forest	 Accuracy 97%
+               Recall (M)	94%
+               AUC 1.00
+K-Nearest Neighbors	 Accuracy 96.1%
+                     Recall (M) 89%
+                      AUC 	0.97
 Winner: Random Forest (better at catching cancer cases)
 3.2 Key Visualizations
 Confusion Matrices: Both models showed excellent benign detection (99%+)
