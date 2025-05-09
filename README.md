@@ -35,7 +35,7 @@ B (Benign) → 0
 Numerical features (excluding id and diagnosis) were standardized using StandardScaler to ensure zero mean and unit variance.
 
 1.4 Outlier Detection 
-Outliers were identified but were kept since they represented aggresive froms of cnacer however if we were to remove the outliers we would use the IQR method  
+Outliers were identified but were kept since they represented aggresive forms of cancer however if we were to remove the outliers we would use the IQR method  
 
 Lower bound = Q1 – 1.5 × IQR
 
