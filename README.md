@@ -112,6 +112,7 @@ A scatter plot of PC1 vs. PC2 showed good separation between malignant and benig
 A scatter plot indicated that ~95% variance was explained by the first 10 components.
 
 6.Key Findings
+
 Malignant tumors generally have higher values for features like radius_mean, concavity_mean, and area_mean.
 
 Feature correlations suggest redundancy (e.g., radius_mean and perimeter_mean are highly correlated).
