@@ -111,7 +111,7 @@ A scatter plot of PC1 vs. PC2 showed good separation between malignant and benig
 
 A scatter plot indicated that ~95% variance was explained by the first 10 components.
 
-6. Key Findings
+6.Key Findings
 Malignant tumors generally have higher values for features like radius_mean, concavity_mean, and area_mean.
 
 Feature correlations suggest redundancy (e.g., radius_mean and perimeter_mean are highly correlated).
@@ -120,14 +120,14 @@ PCA visualization confirms that malignant and benign cases are separable in redu
 
 Outliers were present in many features, affecting model robustness.
 
-7. Recommendations
+7.Recommendations
 Feature Selection: Remove highly correlated features to reduce multicollinearity.
 
 Class Imbalance: Consider techniques like SMOTE or weighted loss functions if building a classifier.
 
 Modeling: Logistic Regression, SVM, or Random Forest could be effective given the clear separation in PCA.
 
-8. Conclusion
+8.Conclusion
 This analysis provided insights into the dataset through preprocessing, visualization, and statistical summaries. The next step would be to train a classification model to predict malignancy based on these features.
 
  Breast Cancer Classification with Machine Learning
