@@ -191,7 +191,7 @@ Feature Importance: worst concave points most predictive in RF
 
 ROC Curves: Both models achieved perfect AUC=1.0 on test set
 
-4. Critical Insights
+4.Critical Insights
    
 Class Imbalance Matters:
 
