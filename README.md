@@ -34,8 +34,8 @@ B (Benign) → 0
 2.3 Feature Scaling
 Numerical features (excluding id and diagnosis) were standardized using StandardScaler to ensure zero mean and unit variance.
 
-2.4 Outlier Detection and Removal
-Outliers were identified using the Interquartile Range (IQR) method:
+2.4 Outlier Detection 
+Outliers were identified but were kept since they represented aggresive froms of cnacer however if we were to remove the outliers we would use the IQR method  
 
 Lower bound = Q1 – 1.5 × IQR
 
@@ -43,7 +43,7 @@ Upper bound = Q3 + 1.5 × IQR
 
 After removal, the dataset reduced from 569 to 277 samples.
 
-3. Exploratory Data Analysis (EDA)
+3.Exploratory Data Analysis (EDA)
 3.1 Summary Statistics
 Descriptive statistics (df.describe()) revealed:
 
