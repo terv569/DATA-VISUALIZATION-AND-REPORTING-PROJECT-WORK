@@ -122,6 +122,7 @@ PCA visualization confirms that malignant and benign cases are separable in redu
 Outliers were present in many features, affecting model robustness.
 
 7.Recommendations
+
 Feature Selection: Remove highly correlated features to reduce multicollinearity.
 
 Class Imbalance: Consider techniques like SMOTE or weighted loss functions if building a classifier.
@@ -129,6 +130,7 @@ Class Imbalance: Consider techniques like SMOTE or weighted loss functions if bu
 Modeling: Logistic Regression, SVM, or Random Forest could be effective given the clear separation in PCA.
 
 8.Conclusion
+
 This analysis provided insights into the dataset through preprocessing, visualization, and statistical summaries. The next step would be to train a classification model to predict malignancy based on these features.
 
  Breast Cancer Classification with Machine Learning
@@ -154,6 +156,7 @@ Train-test split (60-40) with stratification to preserve class balance
 2. Model Implementation
    
 2.1 Random Forest Classifier
+
 Initial Model:
 
 500 trees, max_depth=15
