@@ -108,7 +108,8 @@ PC2: ~19% of variance.
 A scatter plot of PC1 vs. PC2 showed good separation between malignant and benign cases.
 
 5.1 Cumulative Explained Variance
-A scree plot indicated that ~95% variance was explained by the first 10 components.
+
+A scatter plot indicated that ~95% variance was explained by the first 10 components.
 
 6. Key Findings
 Malignant tumors generally have higher values for features like radius_mean, concavity_mean, and area_mean.
