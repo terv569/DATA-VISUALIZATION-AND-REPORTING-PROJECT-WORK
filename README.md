@@ -67,6 +67,7 @@ Benign (B): 357 cases (62.74%)
 Malignant (M): 212 cases (37.26%)
 
 **2.3 Correlation Analysis**
+
 A heatmap of the correlation matrix showed:
 
 High correlation between features like radius_mean, perimeter_mean, and area_mean.
