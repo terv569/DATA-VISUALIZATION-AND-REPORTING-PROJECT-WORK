@@ -195,7 +195,7 @@ Accuracy: 96.1%, Recall: 89% (malignant)
 
 Cross-Validation AUC: 0.968
 
-Winner: Random Forest (better at catching cancer cases)
+We decided to use Random Forests therefore we performed hyperparameter tuning to improve recall of the malignant cases
 
 **3.2 Key Visualizations**
 
