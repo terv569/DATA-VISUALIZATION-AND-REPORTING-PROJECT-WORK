@@ -4,7 +4,7 @@ GROUP 12
 
 This report outlines the procedure followed to analyze the Breast Cancer Wisconsin (Diagnostic) dataset. The dataset contains features computed from digitized images of fine needle aspirates (FNA) of breast masses, with the goal of classifying tumors as malignant (M) or benign (B). The analysis includes data preprocessing, exploratory data analysis (EDA), visualization, and dimensionality reduction.
 
-**DATA PREPROCESSING**
+**1.DATA PREPROCESSING**
 
 **1.1 Loading and Initial Inspection**
 
@@ -80,7 +80,7 @@ Top positively correlated features: concave points_worst, perimeter_worst.
 
 Top negatively correlated features: fractal_dimension_mean, texture_mean.
 
-**3. Data Visualization**
+**3.DATA VISUALIZATION**
 
 **3.1 Count Plot**
 
