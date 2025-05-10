@@ -109,6 +109,7 @@ A pair plot of selected features (radius_mean, texture_mean, etc.) showed clear 
 
 **4.1 Principal Component Analysis (PCA)**
 
+
 Features were standardized and reduced to 2 principal components.
 
 Explained Variance:
