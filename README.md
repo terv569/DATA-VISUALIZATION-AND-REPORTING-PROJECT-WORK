@@ -138,7 +138,7 @@ Outliers were present in many features, affecting model robustness.
 
 Feature Selection: We had to remove highly correlated features to reduce multicollinearity.
 
-Class Imbalance: we used hat do deal with the class imbalnce with techniques such as weighted loss functions since we were building a classifier.
+Class Imbalance: we  had to deal with the class imbalnce with techniques such as weighted loss functions since we were building a classifier.
 
 Modeling: Classification modes eg.Logistic Regression, SVM, or Random Forest could be effective given the clear separation in PCA.
 
