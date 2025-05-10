@@ -207,17 +207,17 @@ ROC Curves: Both models achieved perfect AUC=1.0 on test set
 
 **4.Critical Insights**
    
-Class Imbalance Matters:
+1.Class Imbalance Matters:
 
 Untuned RF missed 11% malignant cases
 
 Class weighting improved malignant recall by 5%
 
-Feature Scaling is Crucial:
+2.Feature Scaling is Crucial:
 
 KNN performance dropped 3% without standardization
 
-Model Interpretability Tradeoff:
+3.Model Interpretability Tradeoff:
 
 RF provides feature importance
 
