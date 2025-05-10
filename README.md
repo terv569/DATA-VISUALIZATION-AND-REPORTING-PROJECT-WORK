@@ -4,7 +4,7 @@ GROUP 12
 
 This report outlines the procedure followed to analyze the Breast Cancer Wisconsin (Diagnostic) dataset. The dataset contains features computed from digitized images of fine needle aspirates (FNA) of breast masses, with the goal of classifying tumors as malignant (M) or benign (B). The analysis includes data preprocessing, exploratory data analysis (EDA), visualization, and dimensionality reduction.
 
-**Data Preprocessing**
+**DATA PREPROCESSING**
 
 **1.1 Loading and Initial Inspection**
 
@@ -48,7 +48,7 @@ Upper bound = Q3 + 1.5 × IQR
 
 After removal, the dataset reduced from 569 to 277 samples.
 
-**2.Exploratory Data Analysis (EDA)**
+**2.EXPLORATORY DATA ANALYSIS(EDA)**
 
 
 **2.1 Summary Statistics**
