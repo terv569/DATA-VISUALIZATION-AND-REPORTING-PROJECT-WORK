@@ -7,6 +7,7 @@ This report outlines the procedure followed to analyze the Breast Cancer Wiscons
 **Data Preprocessing**
 
 <u>1.1 Loading and Initial Inspection</u>
+
 The dataset was loaded using pandas.read_csv().
 
 Initial inspection included:
@@ -26,6 +27,7 @@ No missing values or duplicates were found.
 Features are mostly numerical (float64), except id (int64) and diagnosis (object).
 
 1.2 Encoding Categorical Data
+
 The target variable diagnosis (M/B) was encoded numerically using LabelEncoder:
 
 M (Malignant) → 1
