@@ -59,6 +59,7 @@ Mean values (e.g., radius_mean = 14.13, area_mean = 654.89).
 Standard deviations, min/max values, and quartiles.
 
 **2.2 Class Distribution**
+
 The dataset was imbalanced:
 
 Benign (B): 357 cases (62.74%)
@@ -132,13 +133,13 @@ PCA visualization confirms that malignant and benign cases are separable in redu
 
 Outliers were present in many features, affecting model robustness.
 
-**7.Recommendations**
+**7.Takeaways**
 
-Feature Selection: Remove highly correlated features to reduce multicollinearity.
+Feature Selection: We had to remove highly correlated features to reduce multicollinearity.
 
-Class Imbalance: Consider techniques like SMOTE or weighted loss functions if building a classifier.
+Class Imbalance: we used hat do deal with the class imbalnce with techniques such as weighted loss functions since we were building a classifier.
 
-Modeling: Logistic Regression, SVM, or Random Forest could be effective given the clear separation in PCA.
+Modeling: Classification modes eg.Logistic Regression, SVM, or Random Forest could be effective given the clear separation in PCA.
 
 **8.Conclusion**
 
